@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(../node_modules/foundation-sites/dist/css/foundation.css);
 @import url(../node_modules/bootstrap/dist/css/bootstrap.css);
 @import url(../node_modules/@fortawesome/fontawesome-free/css/all.css);
@@ -27,8 +28,14 @@ h6, hr {
 .membership-fee {
   font-size: 35px; }
 
+.view-conference {
+  margin-top: 15px; }
+
 .yellow-text {
   color: #d46c1a; }
+
+.data-dropdown-menu > li > aß {
+  color: #fff; }
 
 .back-to-top {
   color: white;
@@ -41,12 +48,16 @@ h6, hr {
 .policy {
   float: left; }
 
+.card p {
+  color: #fff; }
+
 header {
   background: url(../images/bg1.png) no-repeat;
   background-size: cover;
   overflow: hidden;
   padding-top: 20px;
-  color: #fff; }
+  color: #fff;
+  padding-bottom: 60px; }
 
 .navigation {
   background: url(../images/bg1.png) no-repeat;
@@ -60,7 +71,7 @@ header {
   background-size: cover;
   height: 400px;
   color: #fff;
-  margin-bottom: 40px; }
+  margin-bottom: 10px; }
 
 #content {
   text-align: left;
@@ -105,10 +116,12 @@ a {
   overflow: hidden;
   height: 400px;
   color: #fff;
-  margin-bottom: 40px; }
+  margin-bottom: 10px; }
 
 .conference-heading {
   margin: 40px;
+  font-size: 14px;
+  font-weight: 800;
   text-align: center; }
 
 .dot-active {
