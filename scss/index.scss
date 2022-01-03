@@ -140,6 +140,9 @@ a{
      text-align: center;
     
  }
+ .facebook-icon{
+     color:#fff;
+ }
  .dot-active {
     cursor: pointer;
     height: 10px;
@@ -149,6 +152,16 @@ a{
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+  }
+
+  @media screen and (max-width:640px){
+      #footer{
+          text-align: center !important;
+      }
+      footer{
+          text-align:center;
+      }
+      
   }
   
   .dot {
@@ -173,7 +186,7 @@ a{
 
  }
  .fab{
-     margin:5px;
+     margin:8px;
      font-size:30px;
  }
  .bg-white{
