@@ -1,0 +1,317 @@
+@import "../node_modules/foundation-sites/dist/css/foundation.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+
+
+// Scss Variable
+$font:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$bg-color:#f7f5f0;
+$black-color:#020202;
+
+//  a function that takes in paddings as arguments and returnd them
+@function pad($pads...) {
+  @return $pads;
+  }
+
+
+@mixin button-hover{
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+@mixin link-hover{
+    cursor: pointer;
+   color:aqua;
+    transition: all .3s;
+  }
+
+@mixin dots ($color){
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    background-color:$color;
+  }
+
+@function setBackgroundColor($color){
+    @return $color;
+}
+
+@function setColor($color){
+    @return $color;
+}
+
+
+.carousel-dots{
+    margin-bottom: 20px;
+    margin-left: 50%;
+    text-align: center;
+    .dot-active {
+        @include dots(rgb(220,140,46));
+      }
+    .dot {
+        @include dots(#bbb);
+      }
+  }
+
+  .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px;
+    content: '';
+    border-bottom-width: 0;
+    border-color: #fff transparent transparent;
+    right: 5px;
+    left: auto;
+    margin-top: -3px;
+}
+  
+h4{
+    color:#fff;
+    font-weight:bold;
+    font-size:18px;
+}
+.list-items{
+    li{
+        margin-left:-35px;
+    }
+}
+h6,hr{
+    color:setBackgroundColor(rgb(55,56,57));
+    &:hover{
+        @include link-hover;
+    }
+    
+}
+.student{
+    background-color: setBackgroundColor(rgb(63,4,139));
+    
+}
+.basic{
+    background-color: setBackgroundColor(rgb(97,57,59));
+}
+.sponsors{
+    background-color: setBackgroundColor(rgb(212,108,26));
+}
+.lifetime{
+    background-color: setBackgroundColor(rgb(90,159,157));
+}
+.main-content{
+    opacity:0.9;
+}
+.learning-more{
+font-weight: 900;
+font-size: larger;
+}
+.membership-fee{
+    font-size:35px;
+}
+
+.yellow-text{
+    color:setColor(rgb(212,108,26));
+}
+.data-dropdown-menu >li >a{
+    color:setColor(#fff);
+}
+.back-to-top{
+    
+    color:setColor(white);
+    padding:15px;
+    background-color:setBackgroundColor(rgb(212,108,26)) ;
+}
+#join-online{
+    float:right;
+}
+
+.policy{
+    float:left;
+}
+.card{
+    p{
+        color:setColor(#fff);
+    }
+}
+.top-bar, .top-bar ul {
+    background-color: #000;
+}
+@media (max-width: 767px) {                  
+    .content-to-hide {
+       display: none;
+    }
+.nav-button{
+    margin-left: 30%;
+}
+    #main-menu{
+        display: flex;
+         flex-flow: column-reverse;
+          }
+ }
+header{
+   
+    background:url(../images/bg1.png) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding-top: pad(20px);
+    color:setColor(#fff); 
+    padding-bottom: pad(60px);
+}
+
+.navigation {
+    background:url(../images/bg1.png) no-repeat;
+    background-size: cover;
+    
+     .dropdown {
+        background:none;
+    } 
+}
+
+#conference1 {
+    text-align: center;
+    background:url(../images/image1.jpeg) no-repeat;
+    background-size: cover;
+    height:400px;
+    color:setColor(#fff);
+    margin-bottom:10px;
+}
+#content{
+    text-align:left;
+    margin-top:20%;
+    margin-left:20px;
+    .view-conference{
+        margin-top:35px;
+        font-weight: bolder;
+    }
+}
+.btn-white{
+    border-radius: 50px;
+    background-color:setBackgroundColor(#fff )!important;
+    color:setColor(#000);
+    font-size:18px;
+    padding-left:40px;
+    padding-right:40px;
+    padding-top:15px;
+    padding-bottom: 15px;
+  
+   
+}
+.data-dropdown-menu {
+    li{
+        &:hover{
+            color:red !important;
+        }
+    }
+   
+}
+a{
+    text-decoration: none;
+}
+#joinNow{
+    text-align: center;
+    background-color: setColor(rgb(24,25,26));
+    color:#fff;
+}
+.fa-play-circle{
+    margin-left: 20px;
+    font-size:80px;
+&:hover{
+    @include button-hover;
+}
+}
+#btn-join{
+    border-radius: 50px;
+    background-color: setBackgroundColor(rgb(220,140,46));
+    color:setColor(white);
+    margin-bottom: 40px;
+    padding-left:pad(60px);
+    padding-right:pad(60px);
+    padding-top:pad(15px);
+    padding-bottom: pad(15px);
+    &:hover{
+        @include button-hover;
+    }
+}
+#conference2 {
+    text-align: center;
+    background:url(../images/conference.jpeg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height:400px;
+    color:setColor(#fff);
+    margin-bottom:10px;
+ }
+ .conference-heading{
+     margin: 30px;
+     font-size:12px;
+     font-weight:bolder;
+     text-align: center;
+    
+ }
+ .facebook-icon{
+     color:setColor(#fff);
+ }
+
+
+
+  //for small screen devices
+  @media screen and (max-width:640px){
+      #footer{
+          text-align: center !important;
+      }
+      footer{
+          text-align:center;
+      }
+    //   #join-online{
+    //    text-align: center;
+    // }
+      
+  }
+  
+
+  
+
+ .menu>li>a{
+  color:setColor(white);
+  background-color:transparent !important;
+  font-weight: 800;
+
+ }
+ .fab{
+     margin:8px;
+     font-size:30px;
+ }
+ .bg-white{
+     background:setBackgroundColor(#fff);
+ }
+ .bg-black{
+    background-color:setBackgroundColor(#000);
+ }
+ .firstbar{
+    background-color:setBackgroundColor(rgb(0, 0,6));
+ }
+ 
+#footer{
+    background-color:setBackgroundColor(rgb(0, 0,6));
+    width:100%;
+  
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

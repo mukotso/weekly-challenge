@@ -1,0 +1,226 @@
+@import url(../node_modules/foundation-sites/dist/css/foundation.css);
+@import url(../node_modules/bootstrap/dist/css/bootstrap.css);
+@import url(../node_modules/@fortawesome/fontawesome-free/css/all.css);
+.carousel-dots {
+  margin-bottom: 20px;
+  margin-left: 50%;
+  text-align: center; }
+  .carousel-dots .dot-active {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    background-color: #dc8c2e; }
+  .carousel-dots .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    background-color: #bbb; }
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px;
+  content: '';
+  border-bottom-width: 0;
+  border-color: #fff transparent transparent;
+  right: 5px;
+  left: auto;
+  margin-top: -3px; }
+
+h4 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px; }
+
+.list-items li {
+  margin-left: -35px; }
+
+h6, hr {
+  color: #373839; }
+  h6:hover, hr:hover {
+    cursor: pointer;
+    color: aqua;
+    transition: all .3s; }
+
+.student {
+  background-color: #3f048b; }
+
+.basic {
+  background-color: #61393b; }
+
+.sponsors {
+  background-color: #d46c1a; }
+
+.lifetime {
+  background-color: #5a9f9d; }
+
+.main-content {
+  opacity: 0.9; }
+
+.learning-more {
+  font-weight: 900;
+  font-size: larger; }
+
+.membership-fee {
+  font-size: 35px; }
+
+.yellow-text {
+  color: #d46c1a; }
+
+.data-dropdown-menu > li > a {
+  color: #fff; }
+
+.back-to-top {
+  color: white;
+  padding: 15px;
+  background-color: #d46c1a; }
+
+#join-online {
+  float: right; }
+
+.policy {
+  float: left; }
+
+.card p {
+  color: #fff; }
+
+.top-bar, .top-bar ul {
+  background-color: #000; }
+
+@media (max-width: 767px) {
+  .content-to-hide {
+    display: none; }
+  .nav-button {
+    margin-left: 30%; }
+  #main-menu {
+    display: flex;
+    flex-flow: column-reverse; } }
+
+header {
+  background: url(../images/bg1.png) no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 20px;
+  color: #fff;
+  padding-bottom: 60px; }
+
+.navigation {
+  background: url(../images/bg1.png) no-repeat;
+  background-size: cover; }
+  .navigation .dropdown {
+    background: none; }
+
+#conference1 {
+  text-align: center;
+  background: url(../images/image1.jpeg) no-repeat;
+  background-size: cover;
+  height: 400px;
+  color: #fff;
+  margin-bottom: 10px; }
+
+#content {
+  text-align: left;
+  margin-top: 20%;
+  margin-left: 20px; }
+  #content .view-conference {
+    margin-top: 35px;
+    font-weight: bolder; }
+
+.btn-white {
+  border-radius: 50px;
+  background-color: #fff !important;
+  color: #000;
+  font-size: 18px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.data-dropdown-menu li:hover {
+  color: red !important; }
+
+a {
+  text-decoration: none; }
+
+#joinNow {
+  text-align: center;
+  background-color: #18191a;
+  color: #fff; }
+
+.fa-play-circle {
+  margin-left: 20px;
+  font-size: 80px; }
+  .fa-play-circle:hover {
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .3s; }
+
+#btn-join {
+  border-radius: 50px;
+  background-color: #dc8c2e;
+  color: white;
+  margin-bottom: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  #btn-join:hover {
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .3s; }
+
+#conference2 {
+  text-align: center;
+  background: url(../images/conference.jpeg) no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 400px;
+  color: #fff;
+  margin-bottom: 10px; }
+
+.conference-heading {
+  margin: 30px;
+  font-size: 12px;
+  font-weight: bolder;
+  text-align: center; }
+
+.facebook-icon {
+  color: #fff; }
+
+@media screen and (max-width: 640px) {
+  #footer {
+    text-align: center !important; }
+  footer {
+    text-align: center; } }
+
+.menu > li > a {
+  color: white;
+  background-color: transparent !important;
+  font-weight: 800; }
+
+.fab {
+  margin: 8px;
+  font-size: 30px; }
+
+.bg-white {
+  background: #fff; }
+
+.bg-black {
+  background-color: #000; }
+
+.firstbar {
+  background-color: #000006; }
+
+#footer {
+  background-color: #000006;
+  width: 100%; }
